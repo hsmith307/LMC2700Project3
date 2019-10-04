@@ -1,0 +1,41 @@
+<!DOCTYPE HTML>
+
+<html>
+  <head>
+      <title>LMC 2700 Project 3</title>
+    <script src="https://aframe.io/releases/0.9.2/aframe.min.js"></script>
+ </head>
+    
+<body>
+    
+    <a-scene>
+    
+        <a-sky src="img/sky.jpg"></a-sky>
+        
+        
+        <a-sphere src="img/mintchoc.jpg" id="mint" position="0 0 0" animation="property:rotation; from: 0 0 0; to: 0 360 0; loop: true; dur: 10000; easing: linear;">
+        </a-sphere> //mint ice cream
+        
+        <a-sphere src="img/coffeecropped.png" id= "coffee" position="0 1.5 0" color = "#897150" animation="property:rotation; from: 0 0 0; to: 0 -360 0; loop: true; dur: 10000; easing: linear;">
+        </a-sphere> //coffee ice cream
+        
+        <a-sphere id="superman" src="img/superman.jpg" position="0 3 0" animation="property:rotation; from: 0 0 0; to: 0 360 0; loop: true; dur: 10000; easing: linear;"> 
+           
+        </a-sphere> //superman ice cream
+        
+        <a-cone src="img/cone.jpg" position="0 -1.5 0" rotation="180 0 0"height="3" width="3"></a-cone> //ice cream cone
+        
+        <a-torus id="donut" src="img/donutcropped.png" position=".5 4.4 .3" radius=".6" radiusTubular=".15" arc="360" animation="property:rotation; from: 0 0 0; to: 0 -360 0; loop: true; dur: 2000; easing: linear;">
+        </a-torus> //donut
+        
+        <a-camera position="0 1 5.5">
+            <a-cursor color=#e326d5></a-cursor>
+        </a-camera>
+        
+        <script src="js/icecream.js">   
+        </script>
+    </a-scene>
+    
+</body>
+
+</html>
